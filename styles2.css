@@ -1,0 +1,159 @@
+body{
+
+    background-color:black; 
+    background-image: url(home.gif);
+
+    color: white;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  
+  #truth{
+  width:200px;
+  margin-top: 20%;
+  margin-left:45%;
+  font-size: 17px;
+  }
+  
+  a{
+    text-decoration: none;      
+  }
+  
+  a:hover{
+   background-color: rgb(255, 56, 21);
+  }
+  
+  p.quote{
+    text-align: center;
+    margin-top: 60px;
+    font-family: 'Satisfy', cursive;
+  }
+  
+  .remainder{
+
+    margin-left: 50%;
+    margin-top: 10%;
+  }
+
+  .container{
+  
+    width:100%;
+    text-align: center;
+    align-items: center;
+  }
+
+  em{
+    
+    font-size: 25px;
+    color: red;
+
+  }
+
+  img{
+  
+    width: 200px;
+  }
+  #myphoto, #myphoto1, #myphoto2, #myphoto3, #myphoto4, #myphoto5, #myphoto6, #myphoto7, #myphoto8,
+  #myphoto9, #myphoto10, #myphoto11 {
+    position: absolute;
+    z-index: 9;
+    text-align: center;
+    left:43%;
+    top:30%;
+  }
+  
+  ul.rules{
+    margin-top: 10%;
+    margin-left: 25%;
+    font-size: 25px;
+
+  }
+  
+   a.red{
+
+    color: red;
+   }
+  
+  
+  #photoconnections {
+    cursor: move;
+    z-index: 10;
+  }
+  
+  
+  nav {
+    background-color: #000000;
+    width: 100%;
+    float: left;
+    display: block;
+    position: fixed;
+    margin-bottom: 10%;
+  }
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  nav li{
+    float: left;
+  }
+  nav li a:link, a:visited{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 5px 15px;
+    text-decoration: none;
+  }
+  nav li a:hover{
+    display: block;
+    background-color: none;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 5px 15px;
+    text-decoration: none;
+  }
+  
+  @media(max-width: 600px) {
+  body{
+    font-size: 15px;
+  }
+  
+  #myphoto, #myphoto1, #myphoto2, #myphoto3, #myphoto4, #myphoto5, #myphoto6, #myphoto7, #myphoto8,
+  #myphoto9, #myphoto10, #myphoto11 {
+    position: absolute;
+    z-index: 9;
+    text-align: center;
+    top:40%;
+    left:42%;
+    display: center;
+  }
+  
+  #truth{
+  width:200px;
+  margin-top: 40%;
+  margin-left:42%;
+  font-size: 9px;
+  }
+  
+  p.quote{
+     margin:15%;
+  }
+  
+  img{
+    width: 100px;
+  }
+  
+  nav li{
+    float: center;
+  }
+  
+  ul.rules{
+    font-size: 18px;
+    margin-left: 8%;
+  }
+
+  p.remainder{
+    margin-top: 30%;
+  }
+  }
+  

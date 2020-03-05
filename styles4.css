@@ -1,0 +1,151 @@
+body{
+
+  background-color:black; 
+  background-image: url(BriefIgnorantBlackbuck-size_restricted.gif);
+  background-attachment: fixed;
+  background-size: cover;
+  color: white;
+  font-size: 20px;
+  font-family: 'Times New Roman', Times, serif;
+  
+}
+
+#truth{
+width:200px;
+margin-top: 20%;
+margin-left:45%;
+font-size: 17px;
+}
+
+a{
+  text-decoration: none;      
+}
+
+a:hover{
+ background-color: rgb(255, 56, 21);
+}
+
+p.quote{
+  text-align: center;
+  margin-top: 60px;
+  font-family: 'Satisfy', cursive;
+
+}
+
+.container{
+    margin-top: 20%;
+    position:relative;
+    height:450px;
+    width:610px;
+    margin:0 auto;
+  }
+  
+  .container img {
+    position:absolute;
+    margin-top: 17%;
+    margin-bottom: 10%;
+    height:450px;
+    width:610px;
+    animation-name: change;
+    animation-iteration-count: infinite;
+    animation-duration: 9s;
+    animation-direction: alternate;
+    -webkit-transition: opacity 1s ease-in-out;
+    -moz-transition: opacity 1s ease-in-out;
+    -o-transition: opacity 1s ease-in-out;
+    transition: opacity 1s ease-in-out;
+  }
+  
+
+  @keyframes change {
+    0% {
+      opacity:0;filter: blur(0.5em);
+    }
+    25% {
+      opacity:1; filter:blur(0em);
+    }
+    50% {
+      opacity:0; filter: blur(0.25em);
+    }
+    75% {
+      opacity:0; filter:blur(0.25em);
+    }
+    100% {
+      opacity:1;  filter: blur(0.5em)
+    }
+  }
+  
+#photoconnections {
+  cursor: move;
+  z-index: 10;
+}
+
+
+nav {
+  background-color: #000000;
+  width: 100%;
+  float: left;
+  display: block;
+  position: fixed;
+  margin-bottom: 10%;
+}
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+nav li{
+  float: left;
+}
+nav li a:link, a:visited{
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 5px 15px;
+  text-decoration: none;
+}
+nav li a:hover{
+  display: block;
+  background-color: none;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  padding: 5px 15px;
+  text-decoration: none;
+}
+
+@media(max-width: 600px) {
+body{
+  font-size: 15px;
+}
+
+
+#truth{
+width:200px;
+margin-top: 40%;
+margin-left:42%;
+font-size: 9px;
+}
+
+p.quote{
+   margin:15%;
+}
+
+.container{
+  margin-top: 20%;
+  position:relative;
+  height:250px;
+  width:100%;
+  margin:0 auto;
+}
+
+.container img {
+  position:absolute;
+  margin-top: 20%;
+  margin-left: 7%;
+  margin-bottom: 20%;
+  height:250px;
+  width:410px;
+
+}
+
+}

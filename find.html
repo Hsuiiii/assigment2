@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <link href="https://fonts.googleapis.com/css?family=Satisfy&display=swap" rel="stylesheet">
+        <link href="styles4.css" rel="stylesheet" />
+        <title>Search</title>
+        
+    </head>
+    <body>
+        <nav id="navMenu"></nav>
+        <br/>
+        <p class="quote">" Don't forget... "</p>
+         <div class ="container">
+             <img class="pic" src="m1.png" />
+             <img class="pic" src="m2.png" />
+             <img class="pic" src="m3.png" />
+             <img class="pic" src="m4.png" />
+             <img class="pic" src="m5.png" />
+             <img class="pic" src="m6.png" />
+             <img class="pic" src="m7.png" />
+             <img class="pic" src="m8.png" />
+             <img class="pic" src="m9.png" />
+             <img class="pic" src="m10.png" />
+             <img class="pic" src="m11.png" />
+             <img class="pic" src="m12.png" />
+         </div>
+        <script>
+            document.getElementById("navMenu").innerHTML =
+            '<ul>'+
+            '<li><a href="home.html">Home</a></li>'+
+            '<li><a href="index.html">Lost</a></li>'+
+            '<li><a href="search.html">Search</a></li>'+
+            '<li><a href="find.html">Find</a></li>'+
+            '</ul>';
+
+            var myIndex = 0;
+            carousel();
+
+             function carousel() {
+             var i;
+             var x = document.getElementsByClassName("pic");
+             for (i = 0; i < x.length; i++) {
+             x[i].style.display = "none";  
+             }
+             myIndex++;
+             if (myIndex > x.length) {myIndex = 1}    
+             x[myIndex-1].style.display = "block";  
+             setTimeout(carousel, 3500); // Change image every 2 seconds
+             }
+        </script>
+    </body>
+    </html>
