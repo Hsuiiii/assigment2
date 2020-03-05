@@ -438,8 +438,8 @@ function dragElement(elmnt) {
 
 document.getElementById("navMenu").innerHTML =
      '<ul>'+
-     '<li><a href="home.html">Home</a></li>'+
-     '<li><a href="index.html">Lost</a></li>'+
+     '<li><a href="index.html">Home</a></li>'+
+     '<li><a href="lost.html">Lost</a></li>'+
      '<li><a href="search.html">Search</a></li>'+
      '<li><a href="find.html">Find</a></li>'+
      '</ul>';
